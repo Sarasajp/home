@@ -1,0 +1,19 @@
+:root {
+    --bs-body-font-family:"Noto Sans JP", sans-serif;
+    }
+/*body{*/
+/*    font-family: var(--bs-body-font-family);*/
+/*    }*/
+html{font-size: 0.9375rem;}
+.cw{color:var(--bs-white);}
+.serv svg {
+    font-size: 48px;
+    background: rgba(96, 198, 198, 0.22);
+    padding: 5px;
+    border-radius: 50%;
+    }
+.serv {text-align: center;}
+.serv > .col > div {
+    padding: 20px 4px;
+    box-shadow: 6px 6px 0px 0px rgba(255,0,0,0.5);
+    }
