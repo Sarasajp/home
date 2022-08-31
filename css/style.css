@@ -1,19 +1,64 @@
 :root {
     --bs-body-font-family:"Noto Sans JP", sans-serif;
+    --red:rgba(226, 71, 75);
+    --white:rgba(255, 255, 255);
     }
 /*body{*/
 /*    font-family: var(--bs-body-font-family);*/
 /*    }*/
 html{font-size: 0.9375rem;}
-.cw{color:var(--bs-white);}
+.cw{color:var(--white);}
+.cred{color:var(--red);}
+.bred{background-color:var(--red);}
+.bw{background-color:var(--white);}
 .serv svg {
-    font-size: 48px;
-    background: rgba(96, 198, 198, 0.22);
+    font-size: 5rem;
+    background: var(--red);
     padding: 5px;
     border-radius: 50%;
+    color:var(--white);
     }
-.serv {text-align: center;}
+.serv, .serb {text-align: center;}
 .serv > .col > div {
     padding: 20px 4px;
-    box-shadow: 6px 6px 0px 0px rgba(255,0,0,0.5);
+    box-shadow: 6px 6px 0 0 var(--red);
+    }
+.serb > .col > div {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+    box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
+    min-height: 250px;
+    }
+.serb > .col > div:hover{color:#fff;}
+.serb > .col > div:hover::before {
+    height: 100%;
+    }
+.serb > .col > div::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 0%;
+    background: var(--red);
+    border-radius: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 10px;
+    }
+.serb svg {
+    font-size: 5rem;
+    background: var(--red);
+    padding: 5px;
+    border-radius: 50%;
+    color:var(--white);
     }
