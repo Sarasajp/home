@@ -122,3 +122,9 @@ html{font-size: 0.9375rem;}
 .choose-content:hover::before {
     width: 100%;
     }
+
+@media (min-width: 991px) {
+    .f6vw {
+        font-size: 6vw;
+        }
+    }
