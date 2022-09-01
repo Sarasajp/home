@@ -11,6 +11,7 @@ html{font-size: 0.9375rem;}
 .cred{color:var(--red);}
 .bred{background-color:var(--red);}
 .bw{background-color:var(--white);}
+.jc {text-align: justify;}
 .serv svg {
     font-size: 5rem;
     background: var(--red);
@@ -22,6 +23,7 @@ html{font-size: 0.9375rem;}
 .serv > .col > div {
     padding: 20px 4px;
     box-shadow: 6px 6px 0 0 var(--red);
+    height: 100%;
     }
 .serb > .col > div {
     text-align: center;
@@ -36,6 +38,7 @@ html{font-size: 0.9375rem;}
     -webkit-box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
     box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
     min-height: 250px;
+    height: 100%;
     }
 .serb > .col > div:hover{color:#fff;}
 .serb > .col > div:hover::before {
@@ -58,8 +61,7 @@ html{font-size: 0.9375rem;}
 .serb svg {
     font-size: 5rem;
     background: var(--red);
-    padding: 5px;
-    border-radius: 50%;
+    padding: 10px;
     color:var(--white);
     }
 .choose-content {
@@ -67,7 +69,7 @@ html{font-size: 0.9375rem;}
     margin-top: 40px;
     padding: 20px 40px 20px 120px;
     background-color: #f5f9fd;
-    border-radius: 50px;
+    border-radius: 10px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
     z-index: 1;
@@ -84,7 +86,7 @@ html{font-size: 0.9375rem;}
     border-radius: 0;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    border-radius: 50px;
+    border-radius: 10px;
     }
 .choose-content .icon {
     position: absolute;
@@ -101,10 +103,16 @@ html{font-size: 0.9375rem;}
     background-color: var(--red);
     color: #ffffff;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 10px;
     font-size: 35px;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    }
+.choose-content > h3{color: var(--red);}
+.choose-content:hover > h3{color: var(--white);}
+.choose-content p {
+    font-size: 13px;
+    text-align: justify;
     }
 .choose-content:hover {
     -webkit-box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.11);
